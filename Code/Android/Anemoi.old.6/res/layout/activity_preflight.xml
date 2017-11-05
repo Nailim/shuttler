@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+        <LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			
+<!--             <Button -->
+<!-- 	            android:id="@+id/button_settings_autopilot_data_path" -->
+<!-- 	            android:layout_width="fill_parent" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:text="@string/button_settings_autopilot_data_path" /> -->
+			
+			<LinearLayout
+		        android:id="@+id/LinearLayout01"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        
+		        <Button
+		            android:id="@+id/button_settings_autopilot_data_path"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/button_settings_autopilot_data_path" />
+		
+		        <Button
+		            android:id="@+id/button_settings_autopilot_data_path_check"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_weight="1"
+		            android:text="@string/button_settings_autopilot_data_path_check_x"
+		            android:onClick="dataFolderCreate" />
+		        	
+		    </LinearLayout>
+			
+	        <Switch
+	            android:id="@+id/switch_settings_autopilot"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginTop="15dp"
+	            android:text="@string/settings_autopilot"
+	            android:textOn="@string/text_on"
+	            android:textOff="@string/text_off" />
+	        
+	        <LinearLayout
+	            android:id="@+id/linearlayout_settings_autopilot"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+		        <Spinner 
+					android:id="@+id/spinner_settings_autopilot_type"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/settings_autopilot_type" />
+		        <LinearLayout
+		            android:id="@+id/linearlayout_settings_autopilot_flightgear"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" >
+			        <Button 
+						android:id="@+id/button_settings_autopilot_flightgear_address" 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:text="@string/button_settings_autopilot_flightgear_address" />
+			        <Button 
+						android:id="@+id/button_settings_autopilot_flightgear_port" 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:text="@string/button_settings_autopilot_flightgear_port" />
+		        </LinearLayout>
+		        <Button
+		            android:id="@+id/button_settings_autopilot_mission_file"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/button_settings_autopilot_mission_file" />
+	        </LinearLayout>
+	        
+	        <Switch
+	            android:id="@+id/switch_settings_copilot"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="15dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginTop="15dp"
+	            android:text="@string/settings_copilot"
+	            android:textOn="@string/text_on"
+	            android:textOff="@string/text_off" />
+	        
+	        <LinearLayout
+	            android:id="@+id/linearlayout_settings_copilot"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+	        </LinearLayout>
+	        
+        </LinearLayout>
+	</ScrollView>
+	
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<!-- 		<Button -->
+<!-- 		    android:id="@+id/preflight2flight" -->
+<!-- 		    android:layout_width="fill_parent" -->
+<!-- 		    android:layout_height="wrap_content" -->
+<!-- 		    android:text="@string/button_preflight2flight" -->
+<!-- 		    android:onClick="preflight2flight" /> -->
+        <Button
+            android:id="@+id/button_connect2flight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_connect2flight"
+            android:onClick="connect2flight" />
+
+        <Button
+            android:id="@+id/button_preflight2flight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_preflight2flight"
+        	android:onClick="preflight2flight" />
+        	
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<PropertyList>
+<generic>
+   <output>
+      <binary_mode>false</binary_mode>
+      <var_separator>\t</var_separator>
+      <line_separator>\n</line_separator>
+      <chunk>
+         <name>Elevator</name>
+         <node>/controls/flight/elevator</node>
+         <type>int</type>
+       </chunk>
+   </output>
+</generic>
+</PropertyList>

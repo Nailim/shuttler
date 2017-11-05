@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<PropertyList>
+	<generic>
+		<output>
+			<binary_mode>false</binary_mode>
+			<var_separator>tab</var_separator>
+			<line_separator>newline</line_separator>
+			<preamble></preamble>
+			<postamble></postamble>
+			
+			<chunk>
+				<name>GPS - latitude (deg)</name>
+				<type>string</type>
+				<format>lat=%s</format>
+				<node>/instrumentation/gps/indicated-latitude-deg</node>
+			</chunk>
+			<chunk>
+				<name>GPS - longitude (deg)</name>
+				<type>string</type>
+				<format>lon=%s</format>
+				<node>/instrumentation/gps/indicated-longitude-deg</node>
+			</chunk>
+			<chunk>
+				<name>GPS - altitude (feet to m)</name>
+				<type>float</type>
+				<format>alt=%.8f</format>
+				<factor>0.3048</factor>
+				<node>/instrumentation/gps/indicated-altitude-ft</node>
+			</chunk>
+			<chunk>
+				<name>GPS - heading (deg)</name>
+				<type>float</type>
+				<format>hdg=%f</format>
+				<node>/instrumentation/gps/indicated-track-true-deg</node>
+			</chunk>
+			<chunk>
+				<name>GPS - speed (knots to m/s)</name>
+				<type>float</type>
+				<format>spd=%.8f</format>
+				<factor>0.514444444</factor>
+				<node>/instrumentation/gps/indicated-ground-speed-kt</node>
+			</chunk>
+			<chunk>
+				<name>GPS - accuracy (m)</name>
+				<type>string</type>
+				<format>acc=1.0</format>
+			</chunk>
+		</output>
+	</generic>
+</PropertyList>

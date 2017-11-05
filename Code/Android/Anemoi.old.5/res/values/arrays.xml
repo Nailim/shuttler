@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="array_autopilot_type">
+		<item>@string/settings_autopilot_type_real</item>
+		<item>@string/settings_autopilot_type_simulation</item>
+	</string-array>
+</resources>

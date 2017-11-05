@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<PropertyList>
+	<generic>
+		<output>
+			<binary_mode>false</binary_mode>
+			<var_separator>tab</var_separator>
+			<line_separator>newline</line_separator>
+			<preamble></preamble>
+			<postamble></postamble>
+			
+			<chunk>
+				<name>yaw (deg)</name>
+				<type>string</type>
+				<format>yaw=%s</format>
+				<node>/orientation/heading-magnetic-deg</node>
+			</chunk>
+			<chunk>
+				<name>pitch (deg)</name>
+				<type>string</type>
+				<format>pth=%s</format>
+				<node>/orientation/pitch-deg</node>
+			</chunk>
+			<chunk>
+				<name>roll (deg)</name>
+				<type>string</type>
+				<format>rol=%s</format>
+				<node>/orientation/roll-deg</node>
+			</chunk>
+			
+		</output>
+	</generic>
+</PropertyList>

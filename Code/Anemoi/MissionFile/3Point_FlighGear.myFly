@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mission>
+	<meta>
+		<name>apTest - 3Point (FlightGear)</name>
+	</meta>
+	
+	<settings>
+		<pid_p_ail>0.1111</pid_p_ail>
+		<pid_p_elv>-0.019</pid_p_elv>
+		<pid_p_rud>0.08</pid_p_rud>
+		
+		<pid_i_ail>0.0</pid_i_ail>
+		<pid_i_elv>-0.025</pid_i_elv>
+		<pid_i_rud>0.0</pid_i_rud>
+		
+		<pid_d_ail>0.5</pid_d_ail>
+		<pid_d_elv>0.75</pid_d_elv>
+		<pid_d_rud>0.08</pid_d_rud>
+		
+		<kal_q_ail>1.0</kal_q_ail>
+		<kal_q_elv>0.1</kal_q_elv>
+		<kal_q_rud>0.1</kal_q_rud>
+		<kal_q_thr>0.01</kal_q_thr>
+		
+		<kal_r_ail>0.1</kal_r_ail>
+		<kal_r_elv>31.0</kal_r_elv>
+		<kal_r_rud>65.0</kal_r_rud>
+		<kal_r_thr>35.0</kal_r_thr>
+		
+		<kal_p_ail>1.0</kal_p_ail>
+		<kal_p_elv>1.0</kal_p_elv>
+		<kal_p_rud>1.0</kal_p_rud>
+		<kal_p_thr>1.0</kal_p_thr>
+	</settings>
+	
+	<calibration>
+		<yaw>0.0</yaw>
+		<roll>0.0</roll>
+		<pitch>0.0</pitch>	
+	</calibration>
+	
+	<envelope>
+		<roll>45.0</roll>
+		<pitch>45.0</pitch>
+		
+		<ceiling>1000</ceiling>
+		
+		<topSpeed>90.0</topSpeed>
+		<stallSpeed>25.0</stallSpeed>
+		<cruiseSpeed>45.0</cruiseSpeed>
+		
+		<topThrottle>1.0</topThrottle>
+		<stallThrottle>0.05</stallThrottle>
+		<cruiseThrottle>0.15</cruiseThrottle>
+	</envelope>
+	
+	<flightPlan>
+		<start>
+			<takeoff>false</takeoff>
+			<altDiff>50</altDiff>
+		</start>
+		<path>
+			<waypoint>
+				<id>W-01</id>
+				<type>fly</type>
+				<latitude>45.93156388888889</latitude>
+				<longitude>15.489888888888888</longitude>
+				<altitude>215</altitude>
+				<altDiff>0.0</altDiff>
+				<direction>left</direction>
+			</waypoint>
+			<waypoint>
+				<id>W-02</id>
+				<type>fly</type>
+				<latitude>45.930749999999996</latitude>
+				<longitude>15.493527777777777</longitude>
+				<altDiff>0.0</altDiff>
+				<altitude>215</altitude>
+				<direction>right</direction>
+			</waypoint>
+			<waypoint>
+				<id>W-03</id>
+				<type>fly</type>
+				<latitude>45.93044166666667</latitude>
+				<longitude>15.491130555555555</longitude>
+				<altDiff>0.0</altDiff>
+				<altitude>235</altitude>
+				
+				<next>W-01</next>
+			</waypoint>
+		</path>
+		<stop>
+			<landing>false</landing>
+			<waypoint>
+				<id>W-STOP</id>
+				<type>fly</type>
+				<latitude>45.930875</latitude>
+				<longitude>15.492075</longitude>
+				<altitude>215</altitude>
+				<altDiff>45.8196</altDiff>
+				<direction>left</direction>
+			</waypoint>
+		</stop>
+	</flightPlan>
+</mission>

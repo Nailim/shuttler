@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<PropertyList>
+<generic>
+   <output>
+      <binary_mode>true</binary_mode>
+      <binary_footer>magic,0x12345678</binary_footer>
+      <chunk>
+         <name>Elevator</name>
+         <node>/controls/flight/elevator</node>
+         <type>int</type>
+       </chunk>
+   </output>
+</generic>
+</PropertyList>

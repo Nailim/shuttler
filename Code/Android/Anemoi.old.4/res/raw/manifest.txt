@@ -1,0 +1,9 @@
+session folder:
+|---> mission				// folder containing a copy of the used mission file
+|   |---> mission.myFly		// copy of the used mission file
+|---> logs					// folder containing sensor telemetry
+|   |---> gps.csv			// gps telemetry
+|   |   |---> : time,latitude,longitude,altitude,altitude difference,heading,speed,accuracy
+|   |---> ori.csv			// fused IMU data
+|   |   |---> : time,yaw,pitch,roll
+|---> media					// folder containing flight pictures or video

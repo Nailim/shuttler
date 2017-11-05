@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Anemoi</string>
+    
+    <string name="settings_autopilot">Autopilot</string>
+    <string name="settings_copilot">Copilot</string>
+    
+    <string name="settings_autopilot_type">Autopilot enviroment</string>
+    <string name="settings_autopilot_type_real">Android</string>
+    <string name="settings_autopilot_type_simulation">FlightGear</string>
+    
+    <string name="button_settings_autopilot_flightgear_address">IP Address</string>
+    <string name="button_settings_autopilot_flightgear_port">Port</string>
+    
+    <string name="button_settings_autopilot_mission_file">Mission File</string>
+    
+    <string name="button_connect2flight">Connect</string>
+    <string name="button_preflight2flight">Preparation Complet</string>
+	
+	<string name="button_startstop_on">Start Flight</string>
+    <string name="button_startstop_off">Stop Flight</string>
+    
+    <string name="button_startstop_autopilot_on">Start Pilot</string>
+    <string name="button_startstop_autopilot_off">Stop Pilot</string>
+    <string name="button_startstop_copilot_on">Start Copilot</string>
+    <string name="button_startstop_copilot_off">Stop Copilot</string>
+    
+    <string name="menu_settings">Settings</string>
+    
+    <string name="copilot_service">Anemoi copilot</string>
+    <string name="copilot_service_started">Copilot service started</string>
+    
+    <string name="autopilot_service">Anemoi autopilot</string>
+    <string name="autopilot_service_started">Autopilot service started</string>
+    
+    <string name="text_on">on</string>
+    <string name="text_off">off</string>
+    
+    <string name="text_error_user">IDIOT</string>
+    <string name="text_error_user_activity">Already doing something!</string>
+    <string name="text_error_user_no_activity">Nothing to do!</string>
+	
+    <string name="text_splash">Setting up ...</string>
+</resources>

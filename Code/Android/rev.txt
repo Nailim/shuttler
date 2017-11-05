@@ -1,0 +1,7 @@
+01: aplication sceleton
+02: services work
+03: basic logging
+04: autopilot output to flightgear
+05: basic myfly
+06: eclipse being a bitch
+07: works but object oriented programming kills it (2000ms+ delay on ori sensor at times)

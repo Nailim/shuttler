@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="mission" use="required">
+	
+	<xs:element name="meta">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="envelope">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="roll" type="xs:decimal"/>
+			<xs:element name="pitch" type="xs:decimal"/>
+			
+			<xs:element name="ceiling" type="xs:decimal"/>
+			<xs:element name="topSpeed" type="xs:decimal"/>
+			<xs:element name="stallSpeed" type="xs:decimal"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="calibration">
+		<xs:complexType>
+			<xs:sequence>
+			<xs:element name="yaw" type="xs:decimal"/>
+			<xs:element name="roll" type="xs:decimal"/>
+			<xs:element name="pitch" type="xs:decimal"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="flightPlan">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="start">
+					<xs:complexType>
+						<xs:sequence>
+						<xs:element name="takeoff" type="xs:string"/>
+						<xs:element name="altDiff" type="xs:decimal"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="waypoint">
+					<xs:complexType>
+						<xs:sequence>
+						<xs:element name="id" type="xs:string"/>
+						
+						<xs:element name="type" type="xs:string"/>
+						
+						<xs:element name="latitude" type="xs:decimal"/>
+						<xs:element name="longitude" type="xs:decimal"/>
+						
+						<xs:element name="altitude" type="xs:decimal"/>
+						<xs:element name="altDiff" type="xs:decimal"/>
+						
+						
+						<xs:element name="distAcq" type="xs:decimal"/>
+						<xs:element name="altAcq" type="xs:decimal"/>
+						
+						<xs:element name="next" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="stop">
+					<xs:complexType>
+						<xs:sequence>
+						<xs:element name="landing" type="xs:string"/>
+						<xs:element name="altDiff" type="xs:decimal"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:element>
+
+</xs:schema>

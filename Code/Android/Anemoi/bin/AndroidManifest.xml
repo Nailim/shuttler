@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oddrat.android.anemoi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+    
+    <uses-feature android:name="android.hardware.usb.host" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".PreFlight" >
+<!--             android:label="@string/app_name" > -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+	        android:name=".Flight" >
+<!-- 	        android:label="flight" > -->
+<!-- 	        <meta-data -->
+<!-- 	            android:name="android.support.PARENT_ACTIVITY" -->
+<!-- 	            android:value="com.addrat.android.anemoi.PreFlight" /> -->
+	    </activity>
+		<activity
+	        android:name=".PostFlight" >
+<!-- 	        android:label="postflight" > -->
+<!-- 	        <meta-data -->
+<!-- 	            android:name="android.support.PARENT_ACTIVITY" -->
+<!-- 	            android:value="com.addrat.android.anemoi.PreFlight" /> -->
+	    </activity>
+	    
+		<service android:name=".copilotService" />
+        <service android:name=".autopilotService"
+        		 android:process=":remote" />
+        
+    </application>
+    
+
+</manifest>

@@ -1,0 +1,15 @@
+session folder:
+|---> info.txt				// human readable review & statistics about this session (also used in parsing) 
+|---> manifest.txt			// describes folder and data structure
+|---> mission				// folder containing a copy of the used mission file
+|   |---> mission.myFly		// copy of the used mission file
+|---> logs					// folder containing sensor telemetry
+|   |---> gps.csv			// gps telemetry
+|   |   |---> : time,latitude,longitude,altitude,altitude offset,heading,speed,accuracy
+|   |---> ori.csv			// fused IMU telemetry
+|   |   |---> : time,yaw,pitch,roll
+|   |---> pidROLL.csv		// PID controller log for the x axis (roll)
+|   |   |---> : time,signal,target,output,error,errorSUM,dERROR,Kp,Ki,Kd
+|   |---> pidPITCH.csv		// PID controller log for the y axis (pitch)
+|   |   |---> : time,signal,target,output,error,errorSUM,dERROR,Kp,Ki,Kd
+|---> media					// folder containing flight pictures or video
